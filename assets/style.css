@@ -16,10 +16,6 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-header {
-    border-top: 12px solid #48bb78;
-}
-
 .container {
     max-width: 1140px;
     padding-right: 15px;
@@ -33,17 +29,17 @@ header {
 }
 
 .left {
-    flex-grow: 3;
+    /* flex-grow: 3; */
     align-self: center;
 }
 
 .right {
-    flex-grow: 1;
-    vertical-align: top;
+    /* flex-grow: 1; */
+    /* vertical-align: top; */
 }
 
 footer {
-    background-color: #242424;
+    background-color: #1b1b1b;
     padding: 25px;
     color: #fff;
 }
@@ -64,8 +60,22 @@ footer svg {
     margin: 0 5px;
 }
 
+.list-green {
+    border-top: 8px solid #48bb78;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(219, 219, 219);
+    transition: .1s ease-in;
+}
+a:hover {
+    transition: .1s ease-out;
+    border-bottom: 2px #48bb78 solid;
+}
+
 footer [class^="icon"] svg {
-    fill: #fff;
+    fill: rgb(172, 172, 172);
 }
 
 nav {
@@ -85,10 +95,9 @@ nav li {
 nav ul a {
    font-size: 18px;
    font-weight: bold;
-   text-decoration: none;
    color: #2d3748e5;
    transition: .2s ease-in;
-   padding: 0 15px;
+   margin-left: 35px;
 }
 
 nav ul a:hover {
@@ -97,15 +106,15 @@ nav ul a:hover {
 }
 
 nav img {
-    width: 4rem;
+    width: 5rem;
     transition: .2s ease-in;
 }
 nav img:hover {
     transform: scale(1.1);
-    transition: .2s ease;
+    transition: .05s ease;
 }
 
-#name {
+.name {
     color: #48bb78;
 }
 
@@ -124,7 +133,7 @@ nav img:hover {
 
 #home .left h5 {
     color: #424242;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 #home .right img {
@@ -133,10 +142,18 @@ nav img:hover {
     box-shadow: 19px 12px 0 2px #2cd084;
 }
 
+.section {
+    margin: 50px 0;
+}
+
+#profile h1 {
+    margin-bottom: 10px;
+}
+
 button {
     font-size: 18px;
     width: 160px;
-    height: 40px;
+    height: 45px;
     color: white;
     background-color: #2cd084;
     border-radius: 3px;
@@ -150,4 +167,25 @@ button:hover {
     border: 2px solid #2cd084;
     background-color: transparent;
     transition: .2s ease-out;
+}
+
+.center {
+    text-align: center;
+}
+
+#contact {
+    padding: 60px 0;
+    background-color: #242424;
+    color: #fff;
+}
+
+.space {
+    justify-content: space-between;
+}
+
+#contact .left {
+    flex-grow: 5;
+}
+#contact .right {
+    flex-grow: 1;
 }
