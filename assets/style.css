@@ -67,3 +67,87 @@ footer svg {
 footer [class^="icon"] svg {
     fill: #fff;
 }
+
+nav {
+    margin-top: 3px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+   display: inline;
+   list-style-type: none;
+   /* margin-right: 20px; */
+}
+
+nav ul a {
+   font-size: 18px;
+   font-weight: bold;
+   text-decoration: none;
+   color: #2d3748e5;
+   transition: .2s ease-in;
+   padding: 0 15px;
+}
+
+nav ul a:hover {
+   color: #48bb78;
+   transition: .2s ease-in;
+}
+
+nav img {
+    width: 4rem;
+    transition: .2s ease-in;
+}
+nav img:hover {
+    transform: scale(1.1);
+    transition: .2s ease;
+}
+
+#name {
+    color: #48bb78;
+}
+
+#home {
+    padding: 40px 0;
+    padding-top: 60px;
+}
+
+#home .left {
+    font-size: 28px;
+}
+
+#home .left h3 {
+    color: #2e2e2e;
+}
+
+#home .left h5 {
+    color: #424242;
+    margin-bottom: 15px;
+}
+
+#home .right img {
+    height: 294px;
+    border-radius: 50%;
+    box-shadow: 19px 12px 0 2px #2cd084;
+}
+
+button {
+    font-size: 18px;
+    width: 160px;
+    height: 40px;
+    color: white;
+    background-color: #2cd084;
+    border-radius: 3px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: .2s ease-in;
+}
+
+button:hover {
+    color: #2cd084;
+    border: 2px solid #2cd084;
+    background-color: transparent;
+    transition: .2s ease-out;
+}
