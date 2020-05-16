@@ -56,6 +56,11 @@ footer svg {
     height: 32px;
 }
 
+#contact svg {
+    height: 16px;
+    fill: rgb(202, 202, 202)
+}
+
 [class^="icon"] {
     margin: 0 5px;
 }
@@ -76,6 +81,12 @@ a:hover {
 
 footer [class^="icon"] svg {
     fill: rgb(172, 172, 172);
+    transition: .2s ease-in;
+}
+
+footer [class^="icon"] svg:hover {
+    fill: #fff;
+    transition: .2s ease-out;
 }
 
 nav {
@@ -143,11 +154,16 @@ nav img:hover {
 }
 
 .section {
-    margin: 50px 0;
+    margin: 70px 0;
 }
 
-#profile h1 {
-    margin-bottom: 10px;
+.section h1, .section h2 {
+    margin-bottom: 25px;
+}
+
+#profile p {
+    margin: 0 auto;
+    max-width: 730px;
 }
 
 button {
@@ -183,9 +199,44 @@ button:hover {
     justify-content: space-between;
 }
 
-#contact .left {
+#contact .left, #about .left {
     flex-grow: 5;
 }
 #contact .right {
     flex-grow: 1;
+}
+#about .right {
+    flex-grow: 2;
+    padding-left: 20px;
+    border-left: 2px #aaa solid;
+}
+
+.text-shadow-green {
+    background-image: linear-gradient(to top, #2cd070da 40%, transparent 0px);
+}
+
+.text-grey {
+    color: #bbb;
+}
+
+#about .row {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#developed-by img {
+    margin-left: 25px;
+    margin-left: 25px;
+    width: 80px;
+    filter: grayscale(100%);
+    transition: .15s ease-in;
+    cursor: pointer;
+}
+#developed-by img:hover {
+    filter: grayscale(0);
+    transition: .15s ease-out;
+}
+
+#developed-by .row {
+    justify-content: center;
 }
