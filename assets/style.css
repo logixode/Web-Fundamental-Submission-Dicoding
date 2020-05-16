@@ -74,7 +74,9 @@ a {
     color: rgb(219, 219, 219);
     transition: .1s ease-in;
 }
-a:hover {
+nav ul a:hover, 
+footer a:hover,
+#contact a:hover {
     transition: .1s ease-out;
     border-bottom: 2px #48bb78 solid;
 }
