@@ -24,6 +24,10 @@ body {
     margin-left: auto;
 }
 
+th {
+    text-align: left;
+}
+
 .row {
     display: flex;
 }
