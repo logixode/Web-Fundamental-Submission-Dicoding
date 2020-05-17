@@ -280,7 +280,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 576px) {
     header .container {
         flex-direction: column;
     }
@@ -299,6 +299,9 @@ button:hover {
         margin-top: 10px;
         margin-bottom: 20px;
     }
+    footer .right {
+        justify-content: space-between !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -307,11 +310,9 @@ button:hover {
     }
     #home .left {
         align-self: unset;
-        text-align: center;
     }
     #home .right {
         margin-bottom: 25px;
-        text-align: center;
     }
     #contact .row,
     #about .row {
@@ -326,5 +327,10 @@ button:hover {
     }
     footer .right {
         justify-content: center;
+    }
+    #home .right,
+    #home .left,
+    footer .left {
+        text-align: center;
     }
 }
