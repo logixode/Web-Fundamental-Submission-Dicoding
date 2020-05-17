@@ -58,7 +58,7 @@ footer svg {
 
 #contact svg {
     height: 16px;
-    fill: rgb(202, 202, 202)
+    fill: rgb(202, 202, 202);
 }
 
 [class^="icon"] {
@@ -72,23 +72,23 @@ footer svg {
 a {
     text-decoration: none;
     color: rgb(219, 219, 219);
-    transition: .1s ease-in;
+    transition: 0.1s ease-in;
 }
-nav ul a:hover, 
+nav ul a:hover,
 footer a:hover,
 #contact a:hover {
-    transition: .1s ease-out;
+    transition: 0.1s ease-out;
     border-bottom: 2px #48bb78 solid;
 }
 
 footer [class^="icon"] svg {
     fill: rgb(172, 172, 172);
-    transition: .2s ease-in;
+    transition: 0.2s ease-in;
 }
 
 footer [class^="icon"] svg:hover {
     fill: #fff;
-    transition: .2s ease-out;
+    transition: 0.2s ease-out;
 }
 
 nav {
@@ -100,31 +100,31 @@ nav {
 }
 
 nav li {
-   display: inline;
-   list-style-type: none;
-   /* margin-right: 20px; */
+    display: inline;
+    list-style-type: none;
+    /* margin-right: 20px; */
 }
 
 nav ul a {
-   font-size: 18px;
-   font-weight: bold;
-   color: #2d3748e5;
-   transition: .2s ease-in;
-   margin-left: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2d3748e5;
+    transition: 0.2s ease-in;
+    margin-left: 35px;
 }
 
 nav ul a:hover {
-   color: #48bb78;
-   transition: .2s ease-in;
+    color: #48bb78;
+    transition: 0.2s ease-in;
 }
 
 nav img {
     width: 5rem;
-    transition: .2s ease-in;
+    transition: 0.2s ease-in;
 }
 nav img:hover {
     transform: scale(1.1);
-    transition: .05s ease;
+    transition: 0.05s ease;
 }
 
 .name {
@@ -159,8 +159,39 @@ nav img:hover {
     margin: 70px 0;
 }
 
-.section h1, .section h2 {
+.section h1,
+.section h2 {
     margin-bottom: 25px;
+}
+
+.section h1 {
+    overflow: hidden;
+    text-align: center;
+}
+
+.section h1:before,
+.section h1:after,
+.section h2:before,
+.section h2:after {
+    background-color: #4d4d4d;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 5%;
+}
+
+.section h1:before,
+.section h2:before {
+    right: 0.7em;
+    margin-left: -50%;
+}
+
+.section h1:after,
+.section h2:after {
+    left: 0.7em;
+    margin-right: -50%;
 }
 
 #profile p {
@@ -177,14 +208,14 @@ button {
     border-radius: 3px;
     cursor: pointer;
     box-sizing: border-box;
-    transition: .2s ease-in;
+    transition: 0.2s ease-in;
 }
 
 button:hover {
     color: #2cd084;
     border: 2px solid #2cd084;
     background-color: transparent;
-    transition: .2s ease-out;
+    transition: 0.2s ease-out;
 }
 
 .center {
@@ -201,7 +232,8 @@ button:hover {
     justify-content: space-between;
 }
 
-#contact .left, #about .left {
+#contact .left,
+#about .left {
     flex-grow: 5;
 }
 #contact .right {
@@ -231,12 +263,12 @@ button:hover {
     margin-left: 25px;
     width: 80px;
     filter: grayscale(100%);
-    transition: .15s ease-in;
+    transition: 0.15s ease-in;
     cursor: pointer;
 }
 #developed-by img:hover {
     filter: grayscale(0);
-    transition: .15s ease-out;
+    transition: 0.15s ease-out;
 }
 
 #developed-by .row {
