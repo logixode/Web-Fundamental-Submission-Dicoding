@@ -64,8 +64,16 @@ footer svg {
 }
 
 #contact svg {
-    height: 16px;
     fill: rgb(202, 202, 202);
+}
+
+#contact .left svg {
+    height: 16px;
+}
+
+#contact .right svg {
+    padding-top: 5px;
+    height: 52px;
 }
 
 [class^="icon"] {
@@ -143,7 +151,7 @@ table {
 }
 
 #home {
-    padding: 40px 0;
+    padding: 20px 0;
     padding-top: 60px;
 }
 
@@ -168,7 +176,7 @@ table {
 }
 
 .section {
-    margin: 70px 0;
+    padding-top: 80px;
 }
 
 .section > h1,
@@ -236,21 +244,22 @@ button:hover {
 }
 
 #contact {
+    margin-top: 70px;
     padding: 60px 0;
     background-color: #242424;
     color: #fff;
+}
+
+#contact h3 {
+    margin-bottom: 10px;
 }
 
 .space {
     justify-content: space-between;
 }
 
-#contact .left,
 #about .left {
     flex-grow: 5;
-}
-#contact .right {
-    flex-grow: 1;
 }
 #about .right {
     flex-grow: 2;
@@ -347,6 +356,10 @@ aside ul li {
     #contact .left {
         margin-top: -10px;
         margin-bottom: 20px;
+    }
+    #contact .right .row {
+        flex-direction: row;
+        justify-content: space-between;
     }
     footer .container > .row {
         flex-direction: column-reverse;
