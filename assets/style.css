@@ -134,6 +134,10 @@ nav img:hover {
     transition: 0.05s ease;
 }
 
+table {
+    border-spacing: 1em;
+}
+
 .name {
     color: #48bb78;
 }
@@ -167,20 +171,21 @@ nav img:hover {
     margin: 70px 0;
 }
 
-.section h1,
-.section h2 {
+.section > h1,
+.section > h2 {
     margin-bottom: 25px;
+    font-size: 26px;
 }
 
-.section h1 {
+.section > h1 {
     overflow: hidden;
     text-align: center;
 }
 
-.section h1:before,
-.section h1:after,
-.section h2:before,
-.section h2:after {
+.section > h1:before,
+.section > h1:after,
+.section > h2:before,
+.section > h2:after {
     background-color: #4d4d4d;
     content: "";
     display: inline-block;
@@ -190,14 +195,14 @@ nav img:hover {
     width: 5%;
 }
 
-.section h1:before,
-.section h2:before {
+.section > h1:before,
+.section > h2:before {
     right: 0.7em;
     margin-left: -50%;
 }
 
-.section h1:after,
-.section h2:after {
+.section > h1:after,
+.section > h2:after {
     left: 0.7em;
     margin-right: -50%;
 }
@@ -276,6 +281,15 @@ button:hover {
     justify-content: center;
 }
 
+aside ul {
+    margin-top: 13px;
+    margin-left: 22px;
+}
+
+aside ul li {
+    margin-top: 13px;
+}
+
 @media screen and (min-width: 768px) {
     #developed-by img {
         filter: grayscale(100%);
@@ -295,6 +309,10 @@ button:hover {
     nav ul a {
         margin-left: 8px;
         margin-right: 8px;
+    }
+
+    table {
+        border-spacing: 0.5em !important;
     }
     #developed-by .row {
         flex-direction: column;
