@@ -11,6 +11,10 @@
     border: 0 solid #e2e8f0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
