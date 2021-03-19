@@ -1,0 +1,12 @@
+{
+  "name": "rohmad_kurniadi",
+  "version": "1.0.0",
+  "description": "Rohmad Kurniadi CV",
+  "repository": "https://github.com/logixode/Web-Profile-CV_Rohmad.git",
+  "author": "logixode <rohmad1230@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "purgecss --css assets/bootstrap.css --content index.html --output assets/bootstrap.optimized.css"
+  }
+}
