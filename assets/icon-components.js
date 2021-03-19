@@ -23,12 +23,12 @@ const linux =
 
 function icon(iconClass, svg) {
   const selector = document.querySelector(iconClass);
-  selector.innerHTML = svg;
+  if (selector) selector.innerHTML = svg;
 }
 
-function iconBefore(iconClass, svg) {
+function iconBeforeLink(iconClass, svg) {
   const selector = document.querySelector(iconClass);
-  selector.insertAdjacentHTML("afterbegin", svg);
+  if (selector) selector.insertAdjacentHTML("afterbegin", svg);
 }
 
 icon(".icon-facebook", facebook);
@@ -39,5 +39,5 @@ icon(".icon-android", android);
 icon(".icon-windows", windows);
 icon(".icon-mac", mac);
 icon(".icon-linux", linux);
-iconBefore(".icon-mail", mail);
-iconBefore(".icon-phone", phone);
+iconBeforeLink(".icon-mail", mail);
+iconBeforeLink(".icon-phone", phone);
