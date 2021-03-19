@@ -1,39 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap");
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
 *,
 :after,
 :before {
   border: 0 solid #e2e8f0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
-}
-
-.container {
-  max-width: 1140px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-th {
-  text-align: left;
-}
-
-.row {
-  display: flex;
 }
 
 .left {
@@ -94,6 +69,7 @@ footer a:hover,
 #contact a:hover {
   transition: 0.1s ease-out;
   border-bottom: 2px #48bb78 solid;
+  color: rgb(219, 219, 219);
 }
 
 footer [class^="icon"] svg {
@@ -104,6 +80,10 @@ footer [class^="icon"] svg {
 footer [class^="icon"] svg:hover {
   fill: #fff;
   transition: 0.2s ease-out;
+}
+
+ul {
+  margin-bottom: 10px !important;
 }
 
 nav {
@@ -140,10 +120,6 @@ nav img {
 nav img:hover {
   transform: scale(1.1);
   transition: 0.05s ease;
-}
-
-table {
-  border-spacing: 1em;
 }
 
 .name {
@@ -227,7 +203,6 @@ button {
   color: white;
   background-color: #2cd084;
   border-radius: 3px;
-  cursor: pointer;
   box-sizing: border-box;
   transition: 0.2s ease-in;
 }
@@ -239,13 +214,10 @@ button:hover {
   transition: 0.2s ease-out;
 }
 
-.center {
-  text-align: center;
-}
-
 #contact {
   margin-top: 70px;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 40px;
   background-color: #242424;
   color: #fff;
 }
@@ -281,9 +253,9 @@ button:hover {
 }
 
 #developed-by img {
-  margin-left: 15px;
-  margin-right: 15px;
-  width: 80px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 100px;
 }
 
 #developed-by .row {
@@ -292,11 +264,17 @@ button:hover {
 
 aside ul {
   margin-top: 13px;
-  margin-left: 22px;
 }
 
 aside ul li {
   margin-top: 13px;
+}
+
+#personal-information td,
+#personal-information th {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -309,6 +287,16 @@ aside ul li {
     filter: grayscale(0);
     transition: 0.15s ease-out;
   }
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -318,6 +306,10 @@ aside ul li {
   nav ul a {
     margin-left: 8px;
     margin-right: 8px;
+  }
+  nav ul {
+    margin-top: 10px;
+    padding-left: 0;
   }
 
   table {
@@ -340,7 +332,10 @@ aside ul li {
 }
 
 @media screen and (max-width: 768px) {
-  #home .row {
+  #home {
+    padding-top: 10px;
+  }
+  #home .container {
     flex-direction: column-reverse;
   }
   #home .left {
@@ -349,19 +344,19 @@ aside ul li {
   #home .right {
     margin-bottom: 25px;
   }
-  #contact .row,
-  #about .row {
+  #contact .d-flex,
+  #about .d-flex {
     flex-direction: column;
   }
   #contact .left {
     margin-top: -10px;
     margin-bottom: 20px;
   }
-  #contact .right .row {
+  #contact .right .d-flex {
     flex-direction: row;
     justify-content: space-between;
   }
-  footer .container > .row {
+  footer .container > .d-flex {
     flex-direction: column-reverse;
   }
   footer .right {
